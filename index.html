@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accueil | ECTA</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="title">
+			<button class="title-button" onclick="document.location.reload()">
+				<h1 class="title-text title-font">ECTA</h1>
+			</button>
+		</div>
+		<div class="confetti" id="birthday-event">
+			<div class="confetti-piece"></div>
+			<div class="confetti-piece"></div>
+			<div class="confetti-piece"></div>
+			<div class="confetti-piece"></div>
+			<div class="confetti-piece"></div>
+			<div class="confetti-piece"></div>
+			<h1 id="birthday-text" title="1 an du système ECTA !" style="font-size: 60px; color: transparent;">1 AN</h1>
+			<div class="confetti-piece"></div>
+			<div class="confetti-piece"></div>
+			<div class="confetti-piece"></div>
+			<div class="confetti-piece"></div>
+			<div class="confetti-piece"></div>
+			<div class="confetti-piece"></div>
+			<div class="confetti-piece"></div>
+		</div>
+	</header>
+
+	<h1 class="maintitle title-font">Système ECTA</h1>
+	<h2 class="subtitle">Serveur polyvalent, de jeux, de multimédias, de stockage, et bien d'autres...</h2>
+
+	<div class="void"></div>
+
+	<h2 class="title-font" style="font-size: 50px;">Accéder au Panel</h2>
+	<div class="middle">
+		<button class="panel" type="submit" onclick="checkServerStatus('check')">
+			<p class="button-text" id="button-link">Panel</p>
+		</button>
+	</div>
+	<p style="font-size: 20px;">
+		Le bouton Panel vous redirige automatiquement vers la meilleure connexion au serveur.
+		<br>
+		Afin d'accéder au serveur lorsqu'il est éteint veuillez vous adresser à un administrateur ECTA.
+	</p>
+
+	<div class="void"></div>
+
+	<div class="middle">
+		<button class="launcher" type="submit" onclick="window.location.href = 'http://launcher.ecta.games/'">Launcher</button>
+	</div>
+	<p style="font-size: 18px;">
+		Le bouton Launcher est uniquement accessible pour les administrateurs, et ceux ayant les droits.
+	</p>
+
+	<div class="blur-panel info-panel" id="info-panel" style="display: none;">
+		<h1 class="title-font">Aucun serveur disponible !</h1>
+		<div class="form-alert-panel">
+			<div class="form-alert" id="form">
+				<p style="font-size: 28px;">
+					Le serveur ECTA n'est pas accessible pour le moment.
+					<br>
+					Pour y accéder, veuillez contacter un administrateur.
+				</p>
+				<p style="font-size: 20px; font-style: italic; color: slategray;">
+					Si le problème persiste :
+					<br>
+					<br>
+					Vérifier votre connexion au serveur ECTA, via hamachi.
+					<br>
+					Vérifier votre connexion à internet.
+					<br>
+					Contacter un administrateur.
+				</p>
+			</div>
+			<button class="backButton middle submit" type="submit" onclick="document.getElementById('info-panel').style.display = 'none'">Retour</button>
+		</div>
+	</div>
+
+	<div class="video-background">
+		<div class="video-foreground">
+		  <iframe src="https://www.youtube.com/embed/sV__yuY04D8?autoplay=1&mute=1&loop=1&disablekb=1&controls=0&showinfo=0&rel=0&playlist=sV__yuY04D8" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div class="blur"></div>
+
+	<footer class="footer">
+		<p class="ecta-version">ECTA Hub v.1.2</p>
+		<p class="ecta-version">Développé par Enzo LE BARS</p>
+	</footer>
+</body>
+</html>
