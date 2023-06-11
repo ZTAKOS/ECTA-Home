@@ -1,3 +1,4 @@
+init();
 function init() {
     window.location.href = "http://www.ecta.games/";
 	var date_now = new Date();
