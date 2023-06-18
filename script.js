@@ -3,11 +3,6 @@ function init() {
     if (window.location.href.indexOf("https") > -1) {
         window.location.href = "http://www.ecta.games/";
     }
-	var date_now = new Date();
-    if ((date_now.getDate() < 15 && date_now.getMonth() == 4) || (date_now.getDate() > 15 && date_now.getMonth() == 5)) {
-        var element = document.getElementById('birthday-event');
-        element.remove();
-    }
 }
 
 var already_check = false;
