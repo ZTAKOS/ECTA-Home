@@ -1,10 +1,3 @@
-init();
-function init() {
-    if (window.location.href.indexOf("https") > -1) {
-        window.location.href = "http://www.ecta.games/";
-    }
-}
-
 var already_check = false;
 function checkServerStatus() {
     if (already_check == false) {
