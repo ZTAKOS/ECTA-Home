@@ -1,49 +1,179 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Accueil | ECTA</title>
+	<title>ECTA | Hébergeur de serveurs de jeux - Gratuit</title>
 	<link rel="stylesheet" href="style.css" />
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<script type="text/javascript" src="script.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<script src="https://kit.fontawesome.com/1e170ac0d6.js" crossorigin="anonymous"></script>
+	<script defer type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
-	<header>
-		<div class="title">
-			<button class="title-button" onclick="document.location.reload()">
-				<h1 class="title-text title-font">ECTA</h1>
+	<section id="main" class="mainsection">
+		<img src="logo.svg" alt="Logo ECTA" class="mainlogo hidden" height="500px" width="500px"/>
+		<h1 class="maintitle hidden" style="margin: 0; letter-spacing: 2px;">Jouer, gratuitement, en illimité.</h1>
+		<div id="ghost-button" style="height: 80px; display: none;"></div>
+		<div class="mainbutton hidden">
+			<button class="panel" style="margin-top: 20px; width: 300px; height: 60px;" type="submit" onclick="checkServerStatus('check')">
+				<p class="button-text" style="font-size: 30px;" id="button-link">Accéder au Panel</p>
 			</button>
 		</div>
-	</header>
+		<div class="menu">
+			<div class="section_ hidden">
+				<a class="nav" href="#about" data-scrollpoint="#about" style="filter: drop-shadow(0 0 10px #080710);">À propos</a>
+			</div>
+			<div class="section_ hidden">
+				<a class="nav" href="#services" data-scrollpoint="#services" style="filter: drop-shadow(0 0 10px #080710);">Services</a>
+			</div>
+			<div class="section_ hidden">
+				<a class="nav" href="#games" data-scrollpoint="#games" style="filter: drop-shadow(0 0 10px #080710);">Jeux</a>
+			</div>
+		</div>
+		<nav class="header" style="opacity: 0;">
+			<div class="title hidden" style="opacity: 0;">
+				<img src="logo.svg" alt="Logo ECTA" height="90px" width="90px" style="filter: drop-shadow(0 0 10px #080710);"/>
+				<button class="title-button" onclick="window.location.href = '#main'">
+					<h1 class="title-text title-font" style="filter: drop-shadow(0 0 10px #080710);">ECTA</h1>
+				</button>
+			</div>
+		</nav>
+		<div class="blur"></div>
+	</section>
 
-	<h1 class="maintitle title-font">Système ECTA</h1>
-	<h2 class="subtitle">Serveur polyvalent, de jeux, de multimédias, de stockage, et bien d'autres...</h2>
+	<section id="about" style="background-color: #161c21;">
+		<h1 class="maintitle" style="letter-spacing: 4px; margin: 0;">Pourquoi ECTA ?</h1>
+		<div class="void"></div>
+		<h2 class="subtitle" style="margin: 0;">Hébergeur gratuit de serveurs de jeux.</h2>
+		<h2 class="subtitle" style="margin: 0;">Des fonctionnalités de gestion de vos serveurs de jeux, pour un prix toujours équivalent à 0.</h2>
+		<h2 class="subtitle">Vous payez déjà pour jouer, pourquoi devoir payer pour jouer avec ses amis ?</h2>
+		<h2 class="subtitle">ECTA est un hébergeur français, conçu par et pour des joueurs.</h2>
+		<div class="void"></div>
+		<h2 class="subtitle">Alors, qu'attendez-vous ?</h2>
+		<div class="middle">
+			<button class="panel" type="submit" onclick="checkServerStatus('check')">
+				<p class="button-text" id="button-link">Je fonce !</p>
+			</button>
+		</div>
+	</section>
 
-	<div class="void"></div>
+	<section id="services" style="background-color: #2d3943;">
+		<h1 class="maintitle" style="letter-spacing: 4px; margin: 0;">Pour quels services ?</h1>
+		<div class="void"></div>
+		<h2 class="subtitle" style="margin: 0;">ECTA est un système polyvalent principalement conçu pour l'hébergement de serveurs de jeux.</h2>
+		<h2 class="subtitle">Comportant des fonctionnalités allant de la création d'un serveur de jeu personnalisé jusqu'à sa gestion complète grâce a l'interface web du panel.</h2>
+		<h2 class="subtitle">Parmis les services vous retrouvez :</h2>
+		<div class="services" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; padding-left: 40px; padding-right: 40px;">
+			<div class="service">
+				<i class="fas fa-cogs" style="font-size: 40px; margin-right: 10px;"></i>
+				<p style="font-size: 30px; margin: 0;">Création de serveur personnalisé</p>
+			</div>
+			<div class="service">
+				<i class="fas fa-check-circle" style="font-size: 40px; margin-right: 10px;"></i>
+				<p style="font-size: 30px; margin: 0;">GRATUIT</p>
+			</div>
+			<div class="service">
+				<i class="fas fa-tachometer-alt" style="font-size: 40px; margin-right: 10px;"></i>
+				<p style="font-size: 30px; margin: 0;">Performances au rendez-vous</p>
+			</div>
+			<div class="service">
+				<i class="fas fa-gamepad" style="font-size: 40px; margin-right: 10px;"></i>
+				<p style="font-size: 30px; margin: 0;">Support de plusieurs jeux</p>
+			</div>
+			<div class="service">
+				<i class="fas fa-shield-alt" style="font-size: 40px; margin-right: 10px;"></i>
+				<p style="font-size: 30px; margin: 0;">Protection et connexion sécurisé</p>
+			</div>
+			<div class="service">
+				<i class="fas fa-cloud-download-alt" style="font-size: 40px; margin-right: 10px;"></i>
+				<p style="font-size: 30px; margin: 0;">Mises à jours régulières</p>
+			</div>
+			<div class="service">
+				<img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" style="width: 50px; margin-right: 10px;">
+				<p style="font-size: 30px; margin: 0;">Hébergé en France</p>
+			</div>
+			<div class="service">
+				<i class="fas fa-tools" style="font-size: 40px; margin-right: 10px;"></i>
+				<p style="font-size: 30px; margin: 0;">Maintenance réactive</p>
+			</div>
+			<div class="service">
+				<i class="fas fa-lightbulb" style="font-size: 40px; margin-right: 10px;"></i>
+				<p style="font-size: 30px; margin: 0;">Serveurs en ligne à la demande</p>
+			</div>
+			<div class="service">
+				<i class="fas fa-stopwatch" style="font-size: 40px; margin-right: 10px;"></i>
+				<p style="font-size: 30px; margin: 0;">Connexion rapide fibré</p>
+			</div>
+			<div class="service">
+				<i class="fas fa-headset" style="font-size: 40px; margin-right: 10px;"></i>
+				<p style="font-size: 30px; margin: 0;">Support client Discord</p>
+			</div>
+			<div class="service">
+				<i class="fas fa-download" style="font-size: 40px; margin-right: 10px;"></i>
+				<p style="font-size: 30px; margin: 0;">Mise à jour des serveurs de jeux automatiquement</p>
+			</div>
+		</div>
+		<div class="void"></div>
+		<h2 class="subtitle">Alors, qu'attendez-vous ?</h2>
+	</section>
 
-	<h2 class="title-font" style="font-size: 50px;">Accéder au Panel</h2>
-	<div class="middle">
-		<button class="panel" type="submit" onclick="checkServerStatus('check')">
-			<p class="button-text" id="button-link">Panel</p>
-		</button>
-	</div>
-	<p style="font-size: 20px;">
-		Le bouton Panel vous redirige automatiquement vers la meilleure connexion au serveur.
-		<br>
-		Afin d'accéder au serveur lorsqu'il est éteint veuillez vous adresser à un administrateur ECTA.
-	</p>
+	<section id="games" style="background-color: #161c21;">
+		<h1 class="maintitle" style="letter-spacing: 4px; margin: 0;">Quels jeux ?</h1>
+		<div class="void"></div>
+		<h2 class="subtitle" style="margin: 0;">Hébergeur de plusieurs jeux, la force de ECTA est dans son étendu de choix toujours au prix de 0.</h2>
+		<h2 class="subtitle" style="margin: 0;">Que choisir parmis ces grands noms ?</h2>
+		<div class="void"></div>
+		<div class="games" style="display: flex; flex-wrap: wrap; justify-content: center;">
+			<div class="game">
+				<img src="games/eco_img_icon.png" style="height: 100px;">
+				<img src="games/eco_img_logo.png" style="height: 100px; width: 300px; object-fit: cover; object-position: 0% 98%;">
+			</div>
+			<div class="game">
+				<img src="games/minecraft_img_icon.png" style="height: 100px;">
+				<img src="games/minecraft_img_logo.png" style="height: 80px; width: 300px; object-fit: cover; object-position: 100% 0%;">
+			</div>
+			<div class="game">
+				<img src="games/satisfactory_img_icon.png" style="height: 100px;">
+				<img src="games/satisfactory_img_logo.png" style="height: 100px; width: 300px; object-fit: cover; object-position: 100% 5%;">
+			</div>
+			<div class="game">
+				<img src="games/unturned_img_icon.png" style="height: 100px;">
+				<img src="games/unturned_img_logo.png" style="height: 80px; width: 300px; object-fit: cover; object-position: 100% 0%;">
+			</div>
+		</div>
+		<div class="void"></div>
+		<h2 class="subtitle">Alors, qu'attendez-vous ?</h2>
+	</section>
 
-	<div class="void"></div>
-
-	<div class="middle">
-		<button class="launcher" type="submit" onclick="window.location.href = 'http://launcher.ecta.games/'">Launcher</button>
-	</div>
-	<p style="font-size: 18px;">
-		Le bouton Launcher est uniquement accessible pour les administrateurs, et ceux ayant les droits.
-	</p>
+	<section id="footer" style="background-color: #2d3943;">
+		<div class="div-footer">
+			<div class="links" style="width: 400px; display: flex; justify-content: flex-end; align-items: center;">
+				<a class="link">ECTA Home v1.3</a>
+				<p style="margin: 0;">|</p>
+				<a class="link" href="http://launcher.ecta.games/">Launcher</a>
+				<p style="margin: 0;">|</p>
+				<a class="link" href="https://ecta-system.statuspage.io/" target="_blank" rel="noopener noreferrer">Status</a>
+			</div>
+			<div class="main-footer" style="margin-left: 50px; margin-right: 50px;">
+				<p style="margin-bottom: 0;">ECTA SYSTEM © 2020-2024</p>
+				<p style="margin-top: 0; font-size: 15px; font-weight: 100; color: darkgray;">v1b.6.6.0</p>
+			</div>
+			<div class="social-media" style="width: 400px;">
+				<div style="background-color: #161c21; border-radius: 10px; padding: 10px; width: min-content;">
+					<a href="https://discord.gg/p6WDwHEU3p" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; text-decoration: none; color: #f1f1f1">
+						<i class="fab fa-discord" style="font-size: 30px; margin-right: 10px;"></i>
+						<p style="margin: 0; font-size: 20px;">Discord</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<div class="blur-panel info-panel" id="info-panel" style="display: none;">
-		<h1 class="title-font">Aucun serveur disponible !</h1>
+		<h1 style="margin-top: 0;">Aucun serveur disponible !</h1>
 		<div class="form-alert-panel">
 			<div class="form-alert" id="form">
 				<p style="font-size: 28px;">
@@ -65,18 +195,5 @@
 			<button class="backButton middle submit" type="submit" onclick="document.getElementById('info-panel').style.display = 'none'">Retour</button>
 		</div>
 	</div>
-
-	<div class="video-background">
-		<div class="video-foreground">
-		  <iframe src="https://www.youtube.com/embed/sV__yuY04D8?autoplay=1&mute=1&loop=1&disablekb=1&controls=0&showinfo=0&rel=0&playlist=sV__yuY04D8" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div>
-
-	<div class="blur"></div>
-
-	<footer class="footer">
-		<p class="ecta-version">ECTA Hub v.1.2</p>
-		<p class="ecta-version">Développé par Enzo LE BARS</p>
-	</footer>
 </body>
 </html>
