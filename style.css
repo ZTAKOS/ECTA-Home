@@ -408,6 +408,38 @@ section#footer {
     transition-delay: 4s;
 }
 
+/* Changelog page */
+
+.text-muted {
+    color: darkgray !important;
+    font-size: 18px;
+}
+
+b {
+    font-size: 20px;
+    text-shadow: 0px 0px 3px white;
+    color: white;
+    font-weight: normal;
+}
+
+.p-2 {
+    background-color: white;
+    color: #2D3943;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.st {
+    font-size: 20px;
+    margin: 0;
+    margin-left: 10px;
+}
+
 /* DEBUG */
 
 /* * {

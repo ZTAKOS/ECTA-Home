@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ECTA | Hébergeur de serveurs de jeux - Gratuit</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<script src="https://kit.fontawesome.com/1e170ac0d6.js" crossorigin="anonymous"></script>
+	<!-- <script defer type="text/javascript" src="script.js"></script> -->
+</head>
+
+<body>
+	<section id="main" class="mainsection" style="min-height: 100px;">
+		<div class="menu fixed">
+			<div class="section_">
+				<a class="nav" href="index.html" data-scrollpoint="#about" style="filter: drop-shadow(0 0 10px #080710);">Accueil</a>
+			</div>
+		</div>
+		<nav class="header fixed">
+			<div class="title">
+				<img src="logo.svg" alt="Logo ECTA" height="90px" width="90px" style="filter: drop-shadow(0 0 10px #080710);"/>
+				<button class="title-button" onclick="window.location.href = '#main'">
+					<h1 class="title-text title-font" style="filter: drop-shadow(0 0 10px #080710);">ECTA</h1>
+				</button>
+			</div>
+		</nav>
+	</section>
+
+	<section id="about" style="background-color: #161c21;">
+		<h1 class="maintitle" style="letter-spacing: 4px; margin: 0; margin-top: 40px;">Changelog</h1>
+		<div class="void"></div>
+		<h2 class="subtitle" style="margin: 0;">Voici le changelog du sytème ECTA.</h2>
+		<h2 class="subtitle" style="margin: 0;">Ce changelog concerne uniquement le système et non les éléments externes comme cette page ou encore certains bot Discord.</h2>
+		<h2 class="subtitle">Toutes les informations sont classées par ordre chronologique.</h2>
+		<!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css'> -->
+		<div class="container" style="width: 80vw">
+			<div class="row justify-content-center" style="display: flex; justify-content: center;">
+				<div class="col-lg-8 col-md-10 col-12">
+				
+					<h5 class="mt-4"> <span class="p-2 bg-light shadow rounded text-success"> Patch 1b.6.6.2</span> - 15 Mai 2024</h5>
+					<h5 class="st">Correction de bugs</h5>
+					<ul>
+						<li class="text-muted">CORE - Correction d'une erreur du système considérant qu'un serveur de jeu avait besoin d'une mise à jour alors qu'il était dans sa dernière version</li>
+						<li class="text-muted">CORE - Correction de la mise en arrêt du système empêché par un serveur de jeu dont la tentative d'extinction était impossible</li>
+						<li class="text-muted">CORE - Correction d'un crash de serveur fréquent causé par une perte de communication</li>
+					</ul>
+					<h5 class="st">> CORE Module v1.6.2</h5>
+					<h5 class="st">> BOT Module v1.5</h5>
+					<h5 class="st">> WEB Module v1.6.1</h5>
+					
+					<h5 class="mt-4"> <span class="p-2 bg-light shadow rounded text-success"> Patch 1b.6.6.1</span> - 24 Avril 2024</h5>
+					<h5 class="st">Correction de bugs</h5>
+					<ul>
+						<li class="text-muted">CORE - Correction de l'arrêt automatique qui ne détecte pas les serveurs de jeux lorsqu'ils sont allumés</li>
+						<li class="text-muted">WEB - Correction d'un problème d'affichage</li>
+						<li class="text-muted">WEB - Changement de l'image du jeu Satisfactory</li>
+					</ul>
+					<h5 class="st">> CORE Module v1.6.1</h5>
+					<h5 class="st">> BOT Module v1.5</h5>
+					<h5 class="st">> WEB Module v1.6.1</h5>
+					
+					<h5 class="mt-4"> <span class="p-2 bg-light shadow rounded text-success"> Version 1b.6.6.0</span> - 29 Mars 2024</h5>
+					<h5 class="st">Nouveautés</h5>
+					<ul>
+						<li class="text-muted">CORE - Optimisation</li>
+						<li class="text-muted">CORE - Ajout d'un nouveau point de connexion (port forward)</li>
+						<li class="text-muted">CORE - <b>Reconstruction complète du CORE</b></li>
+						<li class="text-muted">CORE - <b>Reconstruction complète de la console</b></li>
+						<li class="text-muted">CORE - <b>Reconstruction complète du système de communication</b> entre les modules et le client web</li>
+						<li class="text-muted">CORE - Reconstruction complète des fonctions du CORE en les transformants en sous-modules intégrés</li>
+						<li class="text-muted">CORE - Ajout d'un sous module hamachi</li>
+						<li class="text-muted">CORE - Ajout d'un sous module ADWCleaner</li>
+						<li class="text-muted">CORE - Ajout d'une <b>méthode de redémarrage pour les serveurs</b> de jeux</li>
+						<li class="text-muted">CORE - Liaison entre Plex Media Center et le système</li>
+						<li class="text-muted">CORE - Ajout d'un <b>système d'arrêt programmé</b></li>
+						<li class="text-muted">CORE - Ajout d'un algorithme de calcul pour une <b>estimation de lancement</b> des serveurs</li>
+						<li class="text-muted">CORE - Ajout d'un <b>arrêt automatique</b> en cas d'inactivité prolongé</li>
+						<li class="text-muted">BOT - Passage du bot en version Discord API v10</li>
+						<li class="text-muted">BOT - Ajout de boutons dans son interface de communication</li>
+						<li class="text-muted">BOT - Ajout d'un message de confirmation pour les admin avant l'arrêt automatique du système</li>
+						<li class="text-muted">WEB - Optimisation</li>
+						<li class="text-muted">WEB - Moins de requêtes sont necéssaires au bon fonctionnement du panel</li>
+						<li class="text-muted">WEB - Ajout d'un <b>bouton de redémarrage</b> dans la page des serveurs</li>
+						<li class="text-muted">WEB - Ajout d'une <b>estimation de lancement en pourcentage</b> dans la page du panel pour indiquer la progression du lancement du serveur</li>
+						<li class="text-muted">WEB - Liaison de Plex Media Center à l'interface</li>
+						<li class="text-muted">WEB - <b>Affichage de l'IP du serveur</b> de jeux en fonction du serveurs sur le panel</li>
+						<li class="text-muted">WEB - Ajout d'un texte de bienvenue a la connexion de l'utilisateur</li>
+						<li class="text-muted">WEB - Ajout d'un <b>CAPTCHA à la page d'enregistrement</b> de compte</li>
+						<li class="text-muted">WEB - <b>Modification graphique des pages de login</b> pour un test utilisateur</li>
+						<li class="text-muted">WEB - Ajout d'un état de lancement dans la page des serveurs indiquant si le serveur est en démarrage ou en redémarrage</li>
+						<li class="text-muted">WEB - <b>Reconstruction complète du système de console</b></li>
+						<li class="text-muted">WEB - Ajout d'un <b>code couleur intelligent</b> pour la console indiquant les logs système, logs importants et logs d'erreurs</li>
+						<li class="text-muted">WEB - Ajout d'un système de compression du code front-end pour plus de sécurité et moins de données necessaire par requête</li>
+					</ul>
+					<h5 class="st">Correction de bugs</h5>
+					<ul>
+						<li class="text-muted">CORE - Le système crash quand le disque des serveurs est inaccessible</li>
+						<li class="text-muted">BOT - Le bot n'envoie pas le fichier des logs au Master</li>
+						<li class="text-muted">WEB - La liste de l'historique des erreurs du système ne s'affiche pas par ordre de dates récentes</li>
+						<li class="text-muted">WEB - Texte mise à jour en cours dans la page des serveurs n'est pas correctement affiché</li>
+						<li class="text-muted">WEB - Le nom des serveurs reste l'ancien après qu'ils aient été changé dans l'historique des serveurs</li>
+						<li class="text-muted">WEB - La console affiche des éléments sensibles au démarrage d'un serveur</li>
+						<li class="text-muted">WEB - Le numéro des logs des erreurs et des serveurs dans les historiques sont négatifs lorqu'un serveur est en activé</li>
+					</ul>
+					<h5 class="st">> CORE Module v1.6</h5>
+					<h5 class="st">> BOT Module v1.5</h5>
+					<h5 class="st">> WEB Module v1.6</h5>
+					
+					<h5 class="mt-4"> <span class="p-2 bg-light shadow rounded text-success"> Patch 1.5.1</span> - 7 Février 2024</h5>
+					<h5 class="st">Correction de bugs</h5>
+					<ul>
+						<li class="text-muted">CORE - Correction du crash pour le contrôle des serveurs de jeux Eco</li>
+					</ul>
+					<h5 class="st">> CORE Module v1.5.1</h5>
+					<h5 class="st">> BOT Module v1.4</h5>
+					<h5 class="st">> WEB Module v1.5</h5>
+					
+					<h5 class="mt-4"> <span class="p-2 bg-light shadow rounded text-success"> Version 1.5.0</span> - 9 Juin 2023</h5>
+					<h5 class="st">Nouveautés</h5>
+					<ul>
+						<li class="text-muted">CORE - Optimisation</li>
+						<li class="text-muted">CORE - Compatibilité partielle avec le jeu : <b>"Unturned"</b></li>
+						<li class="text-muted">CORE - Compatibilité complète avec le jeu : <b>"Eco"</b></li>
+						<li class="text-muted">CORE - <b>Sauvegarde des logs</b> de chaque module et serveurs dans le temps</li>
+						<li class="text-muted">CORE - Système de nettoyage de cache en cas de problème</li>
+						<li class="text-muted">CORE - Retravail du système de commande pour le terminal</li>
+						<li class="text-muted">WEB - Optimisation</li>
+						<li class="text-muted">WEB - Retravail complet du design du panel</li>
+						<li class="text-muted">WEB - Le nom ECTA est désormais cliquable afin de rediriger sur la page panel</li>
+						<li class="text-muted">WEB - Mise en place d'un <b>certificat SSL</b> afin de sécuriser le site</li>
+						<li class="text-muted">WEB - Changement de la police d'écriture pour la console et le texte utile</li>
+						<li class="text-muted">WEB - Ajout d'une flèche pour indiquer la section du panel ainsi que les pages sur lequel se trouve l'utilisateur</li>
+						<li class="text-muted">WEB - <b>Refonte de la page de compte</b></li>
+						<li class="text-muted">WEB - Ajout d'un système de changement de nom de compte</li>
+						<li class="text-muted">WEB - Ajout d'un système de suppression de compte</li>
+						<li class="text-muted">WEB - La liste des jeux compatibles est désormais triée par ordre de compatibilité</li>
+						<li class="text-muted">WEB - Ajout de section dans le panel pour <b>l'historique des serveurs lancés et des erreurs du système</b></li>
+						<li class="text-muted">WEB - Modification de la page de bug report pour rendre l'expérience utilisateur plus agréable</li>
+						<li class="text-muted">WEB - Amélioration visuelle du site</li>
+						<li class="text-muted">WEB - Amélioration de la console</li>
+					</ul>
+					<h5 class="st">Correction de bugs</h5>
+					<ul>
+						<li class="text-muted">CORE - Les id serveurs qui n'étaient pas respectés lors de l'implémentation automatique</li>
+						<li class="text-muted">WEB - Corrections de sécurité</li>
+						<li class="text-muted">WEB - Les logs de la console sont affichés en double</li>
+						<li class="text-muted">WEB - Les noms des pages d'options d'arrêt ne sont pas correctement affichés</li>
+						<li class="text-muted">WEB - Les icons ne sont pas tous affichés dans la page de configuration du serveur</li>
+					</ul>
+					<h5 class="st">> CORE Module v1.5</h5>
+					<h5 class="st">> BOT Module v1.4</h5>
+					<h5 class="st">> WEB Module v1.5</h5>
+					
+					<h5 class="mt-4"> <span class="p-2 bg-light shadow rounded text-success"> Version 1.4.0</span> - 29 Janvier 2023</h5>
+					<h5 class="st">Nouveautés</h5>
+					<ul>
+						<li class="text-muted">CORE - Optimisation</li>
+						<li class="text-muted">CORE - Système de correction automatique pour le tunnel Hamachi</li>
+						<li class="text-muted">CORE - Refonte du système de vérification des tunnels que le système utilise</li>
+						<li class="text-muted">CORE - Ajout d'une propriété pour les serveurs de jeux : <b>forcer la mise à jour</b></li>
+						<li class="text-muted">CORE - Changement du <b>système d'id</b> des serveurs qui est désormais fixe et propre à chaque serveur</li>
+						<li class="text-muted">CORE - Amélioration du système de synchronisation des données entre modules</li>
+						<li class="text-muted">WEB - Optimisation</li>
+						<li class="text-muted">WEB - Ajout d'un <b>logo</b> favicon pour les pages du panel</li>
+						<li class="text-muted">WEB - Titre dynamique pour chaque pages du panel</li>
+						<li class="text-muted">WEB - Transition améliorée pour les statistiques du système</li>
+						<li class="text-muted">WEB - Ajout d'un texte pour la configuration des serveurs indiquant la taille recommandé pour les images personnalisées</li>
+						<li class="text-muted">WEB - Ajout de la configuration : forcer la mise à jour</li>
+						<li class="text-muted">WEB - Ajout d'une page d'erreur 404 personnalisée</li>
+						<li class="text-muted">WEB - Ajout d'un bouton pour signaler un bug</li>
+						<li class="text-muted">WEB - Ajout de la <b>page de signalement de bug</b></li>
+						<li class="text-muted">WEB - Refonte de la page HUB passant en version 1.1</li>
+					</ul>
+					<h5 class="st">Correction de bugs</h5>
+					<ul>
+						<li class="text-muted">CORE - Le build_id des serveurs n'est pas correctement détécté et bloque la mise à jour</li>
+						<li class="text-muted">CORE - La console considère l'arrêt des serveurs du jeu "Satisfactory" comme un crash</li>
+						<li class="text-muted">WEB - Le son Easter Egg qui se joue beaucoup trop souvent !</li>
+						<li class="text-muted">WEB - Les informations sur le panel ne sont pas correctement affichés laissant du vide</li>
+						<li class="text-muted">WEB - La mise à jour de serveur de jeux n'est pas visible dans la console du panel</li>
+					</ul>
+					<h5 class="st">> CORE Module v1.4</h5>
+					<h5 class="st">> BOT Module v1.4</h5>
+					<h5 class="st">> WEB Module v1.4</h5>
+					
+					<h5 class="mt-4"> <span class="p-2 bg-light shadow rounded text-success"> Version 1.3.0</span> - 22 Octobre 2022</h5>
+					<h5 class="st">Nouveautés</h5>
+					<ul>
+						<li class="text-muted">CORE - Optimisation</li>
+						<li class="text-muted">CORE - Ajout d'un système de détection de <b>mise à jour automatique</b> pour les serveurs de jeux</li>
+						<li class="text-muted">CORE - <b>Ajout de propriétés</b> pour les serveurs de jeux : permissions, désactivation et propriétaire</li>
+						<li class="text-muted">CORE - Ajout de connection Tunnel (remplacement de la commande §tunnel du bot Discord)</li>
+						<li class="text-muted">CORE - Modifications du statut des modules pour le module web</li>
+						<li class="text-muted">BOT - Optimisation</li>
+						<li class="text-muted">BOT - La commande §state devient §servers</li>
+						<li class="text-muted">BOT - Suppression de la commande §tunnel</li>
+						<li class="text-muted">WEB - Optimisation</li>
+						<li class="text-muted">WEB - Les icons sont désormais statique sur le bandeau de navigation</li>
+						<li class="text-muted">WEB - Amélioration de la page des serveurs de jeux</li>
+						<li class="text-muted">WEB - Ajout de la page d'information sur le projet</li>
+						<li class="text-muted">WEB - Ajout de la <b>page de configuration des serveurs</b> de jeux</li>
+						<li class="text-muted">WEB - Ajout de la <b>page de jeux compatibles</b> avec le système ECTA</li>
+						<li class="text-muted">WEB - Ajout de la configuration : nom de serveur personnalisé</li>
+						<li class="text-muted">WEB - Ajout de la configuration : image de serveur personnalisé</li>
+						<li class="text-muted">WEB - Ajout de la configuration : type de serveur</li>
+						<li class="text-muted">WEB - Ajout de la configuration : désactivation de serveur</li>
+						<li class="text-muted">WEB - Ajout de <b>4 nouveaux sons</b> sur la page du panel : arrêt d'un serveur, mise à jour d'un serveur, crash d'un serveur et détéction d'erreur</li>
+						<li class="text-muted">WEB - <b>Système de mise à jour de serveurs</b> de jeux via la page des serveurs</li>
+						<li class="text-muted">WEB - Modification du panel de l'état des modules dans la page du panel</li>
+						<li class="text-muted">WEB - Modification de la barre de déplacement en vertical pour la page des serveurs</li>
+						<li class="text-muted">WEB - Texte de chargement des informations pour la page de jeux et de serveurs</li>
+						<li class="text-muted">WEB - Redirection vers la page HUB quand le signal réseau à un problème</li>
+					</ul>
+					<h5 class="st">Correction de bugs</h5>
+					<ul>
+						<li class="text-muted">CORE - Les modules ne se ferme pas correctement quand le système s'éteint</li>
+						<li class="text-muted">CORE - Le disque des serveurs se déconnecte du système</li>
+						<li class="text-muted">BOT - Commande §tunnel retirée</li>
+						<li class="text-muted">WEB - Problème d'affichage des serveurs dans la page des serveurs</li>
+					</ul>
+					<h5 class="st">> CORE Module v1.3</h5>
+					<h5 class="st">> BOT Module v1.4</h5>
+					<h5 class="st">> WEB Module v1.3</h5>
+					
+					<h5 class="mt-4"> <span class="p-2 bg-light shadow rounded text-success"> Version 1.2.0</span> - 21 Juin 2022</h5>
+					<h5 class="st">Nouveautés</h5>
+					<ul>
+						<li class="text-muted">CORE - Optimisation</li>
+						<li class="text-muted">CORE - Compatibilité partielle avec le jeu : <b>"Satisfactory"</b></li>
+						<li class="text-muted">WEB - Optimisation</li>
+						<li class="text-muted">WEB - <b>Notification</b> avec le navigateur pour indiquer l'état du serveur de jeu</li>
+						<li class="text-muted">WEB - Ajout d'une barre de déplacement pour la liste des serveurs</li>
+						<li class="text-muted">WEB - Ajout du temps d'exécution du système ECTA depuis son démarrage</li>
+						<li class="text-muted">WEB - Ajout du temps d'exécution du serveur de jeu en cours d'exécution</li>
+						<li class="text-muted">WEB - Lors du rafraichissement de la page la console affichera désormais les 500 dernières lignes de la console</li>
+						<li class="text-muted">WEB - <b>Amélioration de la console</b></li>
+						<li class="text-muted">WEB - La page ne se rechargera plus lors d'envoie de commande dans la console</li>
+						<li class="text-muted">WEB - Texte de chargement des informations en cas de problèmes de connexion entre le client et ECTA</li>
+					</ul>
+					<h5 class="st">Correction de bugs</h5>
+					<ul>
+						<li class="text-muted">CORE - L'implémentation automatique des serveurs ne détecte pas les bons dossiers</li>
+						<li class="text-muted">CORE - L'implémentation automatique des serveurs ne fonctionne pas sur un disque dédié</li>
+						<li class="text-muted">WEB - La page web indique mal l'état du serveur en alternant entre "Hors Ligne" et "En Ligne"</li>
+						<li class="text-muted">WEB - Les icons de serveurs et de déconnection ont été retirés de la page d'arrêt</li>
+					</ul>
+					<h5 class="st">> CORE Module v1.2</h5>
+					<h5 class="st">> BOT Module v1.3</h5>
+					<h5 class="st">> WEB Module v1.2</h5>
+					
+					<h5 class="mt-4"> <span class="p-2 bg-light shadow rounded text-success"> Version 1.1.0</span> - 20 Mai 2022</h5>
+					<h5 class="st">Nouveautés</h5>
+					<ul>
+						<li class="text-muted">CORE - Optimisation</li>
+						<li class="text-muted">CORE - Système de <b>détection automatique</b> de serveurs de jeux</li>
+						<li class="text-muted">CORE - Redémarrage automatique des modules en cas de crash ou de fermeture anormale</li>
+						<li class="text-muted">BOT - La commande §state est désormais disponible à tout le monde</li>
+						<li class="text-muted">BOT - Ajout de la commande §tunnel</li>
+						<li class="text-muted">BOT - Ajout d'un argument de commande (tunnel) pour §help</li>
+						<li class="text-muted">WEB - Optimisation</li>
+						<li class="text-muted">WEB - Les comptes de type standard <b>peuvent désormais accèder</b> a la page des serveurs ainsi que les démarrer et les éteindre</li>
+						<li class="text-muted">WEB - La page d'accès avec code à été retiré pour plus d'accéssibilité</li>
+						<li class="text-muted">WEB - Redirection vers la page HUB quand le système s'éteint</li>
+						<li class="text-muted">WEB - Les logs s'affichent désormais au démarrage du serveur de jeu</li>
+					</ul>
+					<h5 class="st">Correction de bugs</h5>
+					<ul>
+						<li class="text-muted">CORE - Lors de l'arrêt du système le serveur de jeu ne s'arrête pas correctement</li>
+						<li class="text-muted">CORE - Ne détécte plus si il est actif sur le réseau internet</li>
+						<li class="text-muted">BOT - Crash du bot lorsqu'un message est envoyé en privé</li>
+						<li class="text-muted">BOT - Crash quand on lui demande de supprimer des messages (§clear) vieux de plus de 15 jours</li>
+						<li class="text-muted">BOT - Ne detecte plus les serveurs de jeux</li>
+						<li class="text-muted">BOT - N'arrive plus à démarrer les serveurs de jeux</li>
+						<li class="text-muted">BOT - N'arrive plus à arrêter les serveurs de jeux</li>
+						<li class="text-muted">BOT - La commande §state ne fonctionne plus</li>
+						<li class="text-muted">BOT - Ne trouve pas les serveurs dont le nom comporte des espaces</li>
+						<li class="text-muted">BOT - Refuse les commandes des Admins ECTA ainsi que la Team Paté</li>
+						<li class="text-muted">WEB - La liste des serveurs ne s'affiche pas dans la bonne disposition</li>
+						<li class="text-muted">WEB - Les comptes de type standard ont accès à la console et donc aux droits administrateur</li>
+						<li class="text-muted">WEB - Le nom du serveur en ligne affiché au panel n'est pas le bon</li>
+						<li class="text-muted">WEB - L'état du serveur en ligne affiché dans la page des serveurs n'est pas le bon</li>
+					</ul>
+					<h5 class="st">> CORE Module v1.1</h5>
+					<h5 class="st">> BOT Module v1.3</h5>
+					<h5 class="st">> WEB Module v1.1</h5>
+			
+
+					<h5 class="mt-4"> <span class="p-2 bg-light shadow rounded text-success"> Version 1.0.0</span> - 15 Mai 2022</h5>
+					<ul>
+						<li class="text-muted">Sortie initiale</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="void"></div>
+	</section>
+
+	<section id="footer" style="background-color: #2d3943;">
+		<div class="div-footer">
+			<div class="links" style="width: 400px; display: flex; justify-content: flex-end; align-items: center;">
+				<a class="link">ECTA Home v1.4</a>
+				<p style="margin: 0;">|</p>
+				<a class="link" href="changelog.html">Changelog</a>
+				<p style="margin: 0;">|</p>
+				<a class="link" href="http://launcher.ecta.games/">Launcher</a>
+				<p style="margin: 0;">|</p>
+				<a class="link" href="https://ecta-system.statuspage.io/" target="_blank" rel="noopener noreferrer">Status</a>
+			</div>
+			<div class="main-footer" style="margin-left: 50px; margin-right: 50px;">
+				<p style="margin-bottom: 0;">ECTA SYSTEM © 2020-2024</p>
+				<p style="margin-top: 0; font-size: 15px; font-weight: 100; color: darkgray;">v1b.6.6.2</p>
+			</div>
+			<div class="social-media" style="width: 400px;">
+				<div style="background-color: #161c21; border-radius: 10px; padding: 10px; width: min-content;">
+					<a href="https://discord.gg/p6WDwHEU3p" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; text-decoration: none; color: #f1f1f1">
+						<i class="fab fa-discord" style="font-size: 30px; margin-right: 10px;"></i>
+						<p style="margin: 0; font-size: 20px;">Discord</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
