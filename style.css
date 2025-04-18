@@ -187,6 +187,32 @@ button.panel[type=submit]:active, button.launcher[type=submit]:active {
 	text-align: left;
 }
 
+.social-item {
+    background-color: #161c21;
+    color: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    width: min-content;
+    transition: 0.2s;
+}
+
+.social-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f1f1f1;
+    transition: 0.2s;
+}
+
+.social-item:hover {
+    background-color: #f1f1f1;
+    color: #161c21;
+}
+
+.social-item:hover a {
+    color: #161c21;
+}
+
 .blur {
     background: rgba(0, 0, 0, 0.2);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -438,6 +464,25 @@ h5 {
     font-size: 20px;
     margin: 0;
     margin-left: 10px;
+}
+
+/* Privacy page */
+
+.section-title {
+    background-color: white;
+    color: #2D3943;
+    padding: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 0;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 40px;
+}
+
+.text-muted-privacy {
+    color: white !important;
+    font-size: 24px;
 }
 
 /* DEBUG */
