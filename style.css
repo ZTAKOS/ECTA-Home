@@ -190,10 +190,14 @@ button.panel[type=submit]:active, button.launcher[type=submit]:active {
 .social-item {
     background-color: #161c21;
     color: #f1f1f1;
-    border-radius: 10px;
+    border-radius: 50%;
     padding: 10px;
     width: min-content;
     transition: 0.2s;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
 .social-item a {
@@ -482,7 +486,7 @@ h5 {
 
 .text-muted-privacy {
     color: white !important;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 /* DEBUG */
