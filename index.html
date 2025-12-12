@@ -19,7 +19,7 @@
 		<h1 class="maintitle hidden" style="margin: 0; letter-spacing: 2px;">Jouer, gratuitement, en illimité.</h1>
 		<div id="ghost-button" style="height: 80px; display: none;"></div>
 		<div class="mainbutton hidden">
-			<button class="panel" style="margin-top: 20px; width: 300px; height: 60px;" type="submit" onclick="checkServerStatus('check')">
+			<button class="panel" style="margin-top: 20px; width: 300px; height: 60px;" type="submit" onclick="location.href = 'https://panel.ecta.games';">
 				<p class="button-text" style="font-size: 30px;" id="button-link">Accéder au Panel</p>
 			</button>
 		</div>
@@ -156,13 +156,11 @@
 				<p style="margin: 0;">|</p>
 				<a class="link" href="changelog.html">Changelog</a>
 				<p style="margin: 0;">|</p>
-				<a class="link" href="http://launcher.ecta.games/">Launcher</a>
-				<p style="margin: 0;">|</p>
 				<a class="link" href="https://ecta-system.statuspage.io/" target="_blank" rel="noopener noreferrer">Status</a>
 			</div>
 			<div class="main-footer" style="margin-left: 50px; margin-right: 50px;">
 				<p style="margin-bottom: 0;">ECTA SYSTEM © 2020-2025</p>
-				<p style="margin-top: 0; font-size: 15px; font-weight: 100; color: darkgray;">v1c.10.1</p>
+				<p style="margin-top: 0; font-size: 15px; font-weight: 100; color: darkgray;">v1c.10.2</p>
 			</div>
 			<div class="social-media" style="width: 400px;">
 				<div class="social-item">
@@ -174,29 +172,5 @@
 			</div>
 		</div>
 	</section>
-
-	<div class="blur-panel info-panel" id="info-panel" style="display: none;">
-		<h1 style="margin-top: 0;">Aucun serveur disponible !</h1>
-		<div class="form-alert-panel">
-			<div class="form-alert" id="form">
-				<p style="font-size: 28px;">
-					Le serveur ECTA n'est pas accessible pour le moment.
-					<br>
-					Pour y accéder, veuillez contacter un administrateur.
-				</p>
-				<p style="font-size: 20px; font-style: italic; color: slategray;">
-					Si le problème persiste :
-					<br>
-					<br>
-					Vérifier votre connexion au serveur ECTA, via VPN si vous êtes sur un autre réseau.
-					<br>
-					Vérifier votre connexion à internet.
-					<br>
-					Contacter un administrateur.
-				</p>
-			</div>
-			<button class="backButton middle submit" type="submit" onclick="document.getElementById('info-panel').style.display = 'none'">Retour</button>
-		</div>
-	</div>
 </body>
 </html>
