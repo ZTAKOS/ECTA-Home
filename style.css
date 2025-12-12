@@ -203,6 +203,7 @@ button.panel[type=submit]:active, button.launcher[type=submit]:active {
 .social-item a {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: #f1f1f1;
     transition: 0.2s;
