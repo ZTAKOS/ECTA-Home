@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ECTA | Hébergeur de serveurs de jeux - Gratuit</title>
+	<title>ECTA | Hébergement gratuit de serveurs de jeux</title>
 	<link rel="stylesheet" href="style.css" />
 	<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -16,10 +16,10 @@
 <body>
 	<section id="main" class="mainsection">
 		<img src="logo.svg" alt="Logo ECTA" class="mainlogo hidden" height="500px" width="500px"/>
-		<h1 class="maintitle hidden" style="margin: 0; letter-spacing: 2px;">Jouer, gratuitement, en illimité.</h1>
+		<h1 class="maintitle hidden" style="margin: 0; letter-spacing: 2px;">ECTA - Hébergement gratuit de serveurs de jeux</h1>
 		<div id="ghost-button" style="height: 80px; display: none;"></div>
 		<div class="mainbutton hidden">
-			<button class="panel" style="margin-top: 20px; width: 300px; height: 60px;" type="submit" onclick="location.href = 'https://panel.ecta.games';">
+			<button class="panel" style="width: 300px; height: 60px; padding: 0; margin-top: 20px;" type="submit" onclick="location.href = 'https://panel.ecta.games';">
 				<p class="button-text" style="font-size: 30px;" id="button-link">Accéder au Panel</p>
 			</button>
 		</div>
@@ -46,16 +46,19 @@
 	</section>
 
 	<section id="about" style="background-color: #161c21;">
-		<h1 class="maintitle" style="letter-spacing: 4px; margin: 0;">Pourquoi ECTA ?</h1>
+		<h1 class="maintitle" style="letter-spacing: 4px; margin: 0;">Qu'est-ce qu'ECTA ?</h1>
 		<div class="void"></div>
-		<h2 class="subtitle" style="margin: 0;">Hébergeur gratuit de serveurs de jeux.</h2>
-		<h2 class="subtitle" style="margin: 0;">Des fonctionnalités de gestion de vos serveurs de jeux, pour un prix toujours équivalent à 0.</h2>
-		<h2 class="subtitle">Vous payez déjà pour jouer, pourquoi devoir payer pour jouer avec ses amis ?</h2>
-		<h2 class="subtitle">ECTA est un hébergeur français, conçu par et pour des joueurs.</h2>
+		<h2 class="subtitle">ECTA est une plateforme d’hébergement de serveurs de jeux développée dans
+      le cadre d’un projet indépendant.<br>Elle s’adresse aux joueurs souhaitant
+      héberger et administrer leurs serveurs sans connaissances techniques
+      avancées et sans frais.</h2>
+		<h2 class="subtitle">Grâce à son panel web accessible via navigateur, ECTA centralise la gestion
+      des serveurs de jeux et offre des outils essentiels pour leur administration
+      quotidienne.</h2>
 		<div class="void"></div>
 		<h2 class="subtitle">Alors, qu'attendez-vous ?</h2>
 		<div class="middle">
-			<button class="panel" type="submit" onclick="checkServerStatus('check')">
+			<button class="panel" type="submit" onclick="location.href = 'https://panel.ecta.games';">
 				<p class="button-text" id="button-link">Je fonce !</p>
 			</button>
 		</div>
@@ -64,9 +67,10 @@
 	<section id="services" style="background-color: #2d3943;">
 		<h1 class="maintitle" style="letter-spacing: 4px; margin: 0;">Pour quels services ?</h1>
 		<div class="void"></div>
-		<h2 class="subtitle" style="margin: 0;">ECTA est un système polyvalent principalement conçu pour l'hébergement de serveurs de jeux.</h2>
-		<h2 class="subtitle">Comportant des fonctionnalités allant de la création d'un serveur de jeu personnalisé jusqu'à sa gestion complète grâce a l'interface web du panel.</h2>
-		<h2 class="subtitle">Parmis les services vous retrouvez :</h2>
+		<h2 class="subtitle">ECTA est une application web permettant aux joueurs de
+      gérer et administrer des serveurs de jeux gratuitement
+      depuis une interface en ligne simple et accessible.</h2>
+		<h2 class="subtitle">Offrant parmis ces fonctionnalités principales :</h2>
 		<div class="services" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; padding-left: 40px; padding-right: 40px;">
 			<div class="service">
 				<i class="fas fa-cogs" style="font-size: 40px; margin-right: 10px;"></i>
@@ -122,31 +126,31 @@
 	</section>
 
 	<section id="games" style="background-color: #161c21;">
-		<h1 class="maintitle" style="letter-spacing: 4px; margin: 0;">Quels jeux ?</h1>
+		<h1 class="maintitle" style="letter-spacing: 4px; margin: 0;">Quels jeux sont compatibles avec ECTA ?</h1>
 		<div class="void"></div>
-		<h2 class="subtitle" style="margin: 0;">Hébergeur de plusieurs jeux, la force de ECTA est dans son étendu de choix toujours au prix de 0.</h2>
-		<h2 class="subtitle" style="margin: 0;">Que choisir parmis ces grands noms ?</h2>
-		<div class="void"></div>
+		<h2 class="subtitle" style="margin: 0;">ECTA permet l’hébergement et la gestion de serveurs de jeux multijoueurs, principalement des jeux fonctionnant sur des serveurs dédiés ou communautaires.</h2>
+		<h2 class="subtitle">Le service est actuellement orienté vers des jeux populaires disposant de serveurs personnalisables, notamment :</h2>
 		<div class="games" style="display: flex; flex-wrap: wrap; justify-content: center;">
 			<div class="game">
-				<img src="games/eco_img_icon.png" style="height: 100px;">
-				<img src="games/eco_img_logo.png" style="height: 100px; width: 300px; object-fit: cover; object-position: 0% 98%;">
+				<p style="font-size: 50px; margin: 0;">ECO</p>
 			</div>
 			<div class="game">
-				<img src="games/minecraft_img_icon.png" style="height: 100px;">
-				<img src="games/minecraft_img_logo.png" style="height: 80px; width: 300px; object-fit: cover; object-position: 100% 0%;">
+				<p style="font-size: 50px; margin: 0;">Minecraft (Java Edition)</p>
 			</div>
 			<div class="game">
-				<img src="games/satisfactory_img_icon.png" style="height: 100px;">
-				<img src="games/satisfactory_img_logo.png" style="height: 100px; width: 300px; object-fit: cover; object-position: 100% 0%;">
+				<p style="font-size: 50px; margin: 0;">Satisfactory</p>
 			</div>
 			<div class="game">
-				<img src="games/unturned_img_icon.png" style="height: 100px;">
-				<img src="games/unturned_img_logo.png" style="height: 80px; width: 300px; object-fit: cover; object-position: 100% 0%;">
+				<p style="font-size: 50px; margin: 0;">Unturned</p>
 			</div>
 		</div>
-		<div class="void"></div>
-		<h2 class="subtitle">Alors, qu'attendez-vous ?</h2>
+		<h2 class="subtitle" style="font-size: 20px; margin: 20px;">Cette liste n’est pas exhaustive et peut évoluer au fil du développement du projet.</h2>
+		<h2 class="subtitle" style="margin-top: 40px;">Alors, qu'attendez-vous ?</h2>
+		<div class="middle">
+			<button class="panel" type="submit" onclick="location.href = 'https://panel.ecta.games';">
+				<p class="button-text" id="button-link">Créer un compte / Se connecter</p>
+			</button>
+		</div>
 	</section>
 
 	<section id="footer" style="background-color: #2d3943;">

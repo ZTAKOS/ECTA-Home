@@ -121,7 +121,7 @@ a.link:hover {
 }
 
 .button-text {
-    font-size: 60px;
+    font-size: 36px;
     margin: 0;
 }
 .button-subtext {
@@ -131,18 +131,19 @@ a.link:hover {
 
 
 button.panel[type=submit] {
-    width: 400px;
-	height: 100px;
-    font-size: 60px;
     cursor: pointer;
-    border: 3px solid #2D3943;
+    border: 2px solid #2D3943;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-    border-radius: 4px;
+    border-radius: 8px;
 	background-color: #2D3943;
 	color: #f1f1f1;
     margin-right: 10px;
     margin-left: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 button.panel.transition {
@@ -171,7 +172,7 @@ button.panel[type=submit]:hover, button.launcher[type=submit]:hover {
 
 button.panel[type=submit]:active, button.launcher[type=submit]:active {
     background-color: #f1f1f1;
-    border: 3px solid #f1f1f1;
+    border: 2px solid #f1f1f1;
     color: #161c21;
 }
 
@@ -371,7 +372,10 @@ section#footer {
     align-items: center;
     border-radius: 20px;
     margin: 10px;
-    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .div-footer {
